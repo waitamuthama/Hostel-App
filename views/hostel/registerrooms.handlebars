@@ -1,0 +1,44 @@
+
+        <!--================ Start Registration Area =================-->
+              <div class="main-panel">
+                <div class="content ">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                            <h4 class="card-title text-center">Register rooms </h4>
+                          </div>
+                          <div class="card-body">
+                            <form action="/hostel/registerrooms/{{room.id}}" method="post">
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label class="bmd-label-floating">Hostel Name</label>
+                                  <input type="text" class="form-control" value="{{room.name}}" name="hostel" >
+                                </div>
+                              </div>
+
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <label class="bmd-label-floating">Room Number</label>
+                                    <input type="text" class="form-control" value="" name="roomnumber" >
+                                  </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <label class="bmd-label-floating">Space</label>
+                                    <input type="Number" class="form-control" value="" name="space" >
+                                  </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-success btn-block" name="button">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+          <!--================ End Registration Area =================-->

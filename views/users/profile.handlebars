@@ -1,0 +1,76 @@
+
+
+{{>_errors}}
+{{>_msg}}
+{{>_sidebar}}
+    <div class="main-panel">
+    {{>_navbar}}
+      <div class="content">
+        {{>_errors}}
+        <div class="container-fluid ">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="card">
+
+
+                 <div class="card card-profile ">
+                <div class="card-avatar">
+                  <a href="#">
+                    <img class="img" src="/assets/img/faces/marc.jpg" />
+                  </a>
+                </div>
+                <div class="card-header card-header-primary">
+                  <p class="card-category">Complete your profile</p>
+                </div>
+                <div class="card-body">
+                  <form class="" action="/users/profile/{{user.id}}" method="post">
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">phone</label>
+                          <input type="text"  name="phone" class="form-control text-center" value="{{user.phone}}">
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">location</label>
+                          <input type="text" class="form-control text-center" name="location" value="{{user.location}}">
+                        </div>
+                      </div>
+                    </div>
+
+                   
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">First Name</label>
+                          <input type="text" class="form-control text-center" name="fname" value="{{user.firstName}}">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Last Name</label>
+                          <input type="text" class="form-control text-center" name="lname" value="{{user.lastName}}">
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Email address</label>
+                          <input type="email" class="form-control text-center"  name="email" value="{{user.email}}">
+                        </div>
+                      </div>
+
+                     
+                    <button type="submit" name="button" class="btn btn-primary pull-right">Update Profile</button>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
